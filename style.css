@@ -136,7 +136,7 @@ header h1 {
 }
 
 .todo__list__item {
-    padding: clamp(0px, 1vw, 20px);
+    padding: clamp(5px, 1vw, 20px) clamp(10px, 1vw, 20px);
     display: flex;
     align-items: center;
     transition: background-color 0.2s;
@@ -185,4 +185,30 @@ header h1 {
 .todo__list__item__text.completed {
     text-decoration: line-through;
     color: var(--gray);
+}
+
+.btn__delete {
+    background: none;
+    border: none;
+    color: var(--danger);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.todo__list__item:hover .btn__delete {
+    opacity: 1;
+} 
+
+.todo__list--empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+    padding: clamp(10px, 2vw, 40px) 0;
+}
+
+.todo__list--empty i {
+    font-family:;
 }
