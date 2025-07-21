@@ -49,3 +49,12 @@ body {
     padding: 20px;
     overflow: hidden;
 }
+
+.todo {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--light);
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
