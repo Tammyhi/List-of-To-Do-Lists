@@ -127,3 +127,22 @@ header h1 {
     border-bottom: 2px solid var(--primary);
     font-weight: 600;
 }
+
+.todo__list {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: clamp(20px, 2vw, 40px);
+    list-style: none;
+}
+
+.todo__list__item {
+    padding: clamp(0px, 1vw, 20px);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.todo__list__item:hover {
+    background-color: var(--background);
+    border-radius: 12px;
+}
