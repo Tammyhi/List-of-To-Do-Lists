@@ -8,11 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="app">
+    <div class="todo">
         <header>
             <h1> <i class="fas fa-check-circle"></i> My Tasks</h1>
+            <p id="header__date"></p>
         </header>
-        <p id="header-date"></p>
+
+        <section class="todo__create">
+            <input type="text" id="input__create" placeholder="Your next task is...">
+            <button id="btn__create">
+                <i class="fas fa-plus"></i>
+                </button>
+        </section>
+
+        <section class="todo__filters">
+            <span class="filter active" data-filter="all">
+                All
+            </span> 
+            <span class="filter" data-filter="active">
+                Active
+            </span> 
+            <span class="filter" data-filter="completed">
+                Completed
+            </span> 
+        </section>
+
+        <ul class="todo__list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+
+        <section class="todo__list--empty hidden">
+            <i class="fas fa-clipboard-list"></i>
+            <p>There are no tasks yet</p>
+        </section>
+
+        <footer>
+            <p class="todo__itemsLeft">
+                0 items left
+            </p>
+            <button id="btn__clearCompleted">
+                Clear completed
+            </button>
+        </footer>
     </div>
     <script src="script.js" defer></script>
 </body>
