@@ -35,8 +35,16 @@
 
         <ul class="todo__list">
             <!-- Tasks will be dynamically added here -->
-             <li class="todo__list__item">yee</li>
-             <li class="todo__list__item">haw</li>
+             <li class="todo__list__item">
+                <label class="todo__checkbox__label">
+                    <input type="checkbox" class="todo__checkbox">
+                    <span class="todo__checkbox__checkmark"><i class="fa-solid fa-check"></i></span>
+                </label>
+                <span class="todo__list__item__text completed">Look</span>
+                <button class="btn__delete">
+                    <i class="fas fa-times"></i>
+                </button>
+            </li>
         </ul>
 
         <section class="todo__list--empty hidden">
