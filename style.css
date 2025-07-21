@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: clamp(20px, 2vw, 40px);
     overflow: hidden;
 }
 
@@ -62,7 +62,7 @@ header {
     border-radius: 12px 12px 0 0;
     background-color: var(--primary);
     color: var(--light);
-    padding: 20px;
+    padding: clamp(20px, 2vw, 40px);
 }
 
 header h1 {
@@ -74,13 +74,13 @@ header h1 {
 .todo__create {
     display: flex;
     gap: 2vw;
-    padding: 20px;
+    padding: clamp(20px, 2vw, 40px);
     border-bottom: 1px solid var(--border);
 }
 
 .todo__create input {
     flex: 1;
-    padding: 8px;
+    padding: clamp(8px, 1vw, 16px);
     border: 1px solid var(--border);
     border-radius: 12px;
     transition: all 0.2s;
@@ -92,8 +92,8 @@ header h1 {
 }
 
 .todo__create button {
-    width: 40px;
-    height: 40px;
+    width: clamp(40px, 2vw, 50px);
+    height: clamp(40px, 2vw, 50px);
     background-color: var(--primary);
     color: var(--light);
     border: none;
@@ -103,4 +103,11 @@ header h1 {
 }
 .todo__create button:hover {
     background-color: var(--primary-light);
+}
+
+.todo__filters {
+    display: flex;
+    gap: 1vw;
+    padding: clamp(20px, 1vw, 40px);
+    border-bottom: 1px solid var(--border);
 }
