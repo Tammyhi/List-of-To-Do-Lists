@@ -111,3 +111,19 @@ header h1 {
     padding: clamp(20px, 1vw, 40px);
     border-bottom: 1px solid var(--border);
 }
+
+.todo__filter {
+    padding: clamp(3px, 0.5vw, 10px);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--gray);
+}
+
+.todo__filter:hover {
+    color: var(--primary);
+}
+
+.todo__filter.active {
+    border-bottom: 2px solid var(--primary);
+    font-weight: 600;
+}
