@@ -2,6 +2,7 @@ let todos = [];
 let currFilter = 'all';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Clear completed items
     document.body.addEventListener('click', (event) => {
         const clearButton = event.target.closest('.btn__clearCompleted');
         if (clearButton) {
@@ -16,4 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Check a Todo Item
+    
+
+    // Uncheck a Todo Item
 });
+// Switch to Active Tab
+// Switch to Completed Tab
+// Switch back to All Tab
+// Add New Todo Item
+// Complete a Todo Item (change it's state)
+// Uncheck a Todo Item (change it's state)
+// Change how much items are left
+// Delete a Todo Item
+// Change text of a Todo Item
